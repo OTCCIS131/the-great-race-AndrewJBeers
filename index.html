@@ -15,6 +15,13 @@
             padding-right: 0px;
         } */
 
+        .racer {
+            position: absolute;
+            left: 0;
+            bottom: 10vh;
+            transition: left .5s;
+        }
+
         body {
             background-image: url("castle.jpg");
             background-repeat: no-repeat;
@@ -32,17 +39,19 @@
         }
 
         #howl {
-            position: fixed;
-            top: 40%;
             left: 0px;
             height: 25%;
         }
 
         #calcifer {
-            position: fixed;
-            top: 60%;
             left: 0px;
             height: 40%;
+        }
+
+        #sophie {
+            position: fixed;
+            bottom: 10vh;
+            right: -4vh;
         }
     </style>
 
@@ -54,8 +63,8 @@
 
         <img src="turnipHead.png" id="startButton" @click="startRace">
         <img src="howl.png" class="racer" id="howl" alt="Howl">
-        <img src="calcifer.png" calss="racer" id="calcifer" alt="Calcifer">
-        <!-- <img src="howl.png" class="racer" id="howl" alt="Howl"> -->
+        <img src="calcifer.png" class="racer" id="calcifer" alt="Calcifer">
+        <img src="sophie.png" id="sophie" alt="Sophie">
 
 
 
