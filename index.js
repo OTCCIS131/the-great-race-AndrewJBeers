@@ -1,4 +1,17 @@
+$(function () {
+    let vm = new Vue({
+        el: '#app',
+        data: {
 
+        },
+        computed: {
+
+        },
+        methods: {
+            // startRace
+        }
+    })
+})
 
 
  // progressPlayer
