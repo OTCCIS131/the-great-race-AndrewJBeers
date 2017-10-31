@@ -56,8 +56,7 @@
             position: fixed;
             bottom: 10vh;
             right: 0vw;
-            /* width: 13%;
-            height: auto; */
+      
         }
         #sophhal{
             position: fixed;
@@ -67,7 +66,7 @@
         #sophcal{
             position: fixed;
             bottom: 50vh;
-            /* right: 100vh; */
+            
             left: 0vw;
         }
     </style>
@@ -78,9 +77,9 @@
 
     <div class="container-fluid" id="app">
 
-        <img src="turnipHead.png" id="startButton" @click="startRace">
-        <img src="howl.png" class="racer" id="howl" alt="Howl">
-        <img src="calcifer.png" class="racer" id="calcifer" alt="Calcifer">
+        <img src="turnipHead.png" class = "jump" id="startButton" @click="startRace">
+        <img src="howl.png" class="racer" :class ="howlClass" id="howl" style="howlStyle">
+        <img src="calcifer.png" class="racer" :class ="calciferClass" id="calcifer" style="calciferStyle">
         <img src="sophie.png" id="sophie" alt="Sophie">
       
       

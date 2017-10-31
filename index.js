@@ -5,6 +5,27 @@ $(function () {
 
         },
         computed: {
+            winning(){
+                if(this.calcifer == this.howl) return null
+
+               
+            },
+            calciferStyle(){
+                retu(property) left: string
+                left: '${this.calcifer}vw'
+                
+            },
+            calciferClass(){
+                if(!this.winner) return
+                    return this.winner
+            },
+            howlStyle(){
+                return(property); left: string
+                left: '${this.howl}vw'
+            },
+            howlClass(){
+
+            }
 
         },
         methods: {
