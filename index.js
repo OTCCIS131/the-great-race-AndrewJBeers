@@ -30,11 +30,14 @@ $(function () {
         },
         methods: {
             startRace: function(){
-                alert("this will start program")
+                // alert("this will start program")
                 this.getRandom()
             },
             getRandom: function(){
                 console.log("random")
+                
+                // console.log(Math.random()*10) 
+                console.log(Math.random() >= .5) ? 1 : 0
             }
             
 
