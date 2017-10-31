@@ -6,22 +6,22 @@ $(function () {
         },
         computed: {
             winning(){
-                if(this.calcifer == this.howl) return null
+                // if(this.calcifer == this.howl) return null
 
                
             },
             calciferStyle(){
-                retu(property) left: string
-                left: '${this.calcifer}vw'
+                // retu(property) left: string
+                // left: '${this.calcifer}vw';
                 
             },
             calciferClass(){
-                if(!this.winner) return
-                    return this.winner
+                // if(!this.winner) return
+                //     return this.winner
             },
             howlStyle(){
-                return(property); left: string
-                left: '${this.howl}vw'
+                // return(property); left: string
+                // left: '${this.howl}vw';
             },
             howlClass(){
 
@@ -29,7 +29,16 @@ $(function () {
 
         },
         methods: {
-            // startRace
+            startRace: function(){
+                alert("this will start program")
+                this.getRandom()
+            },
+            getRandom: function(){
+                console.log("random")
+            }
+            
+
+            
         }
     })
 })
