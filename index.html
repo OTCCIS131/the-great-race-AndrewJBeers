@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>jqyery-tut</title>
+    <title>Great Race</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="styles.css"> -->
@@ -73,9 +73,9 @@
 
     <div class="container-fluid" id="app">
 
-        <img src="turnipHead.png" class = "jump" id="startButton" @click="startRace()">
-        <img src="howl.png" class="racer" :class ="howlClass" id="howl" style="howlStyle">
-        <img src="calcifer.png" class="racer" :class ="calciferClass" id="calcifer" style="calciferStyle">
+        <img src="turnipHead.png" class = "jump" id="startButton" @click="startRace">
+        <img src="howl.png" class="racer" :class ="howlClass" :style = "howlStyle" id="howl" >
+        <img src="calcifer.png" class="racer" :class ="calciferClass" id="calcifer" :style="calciferStyle">
         <img src="sophie.png" id="sophie" alt="Sophie">
       
       
@@ -91,7 +91,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
+    <script src="Vue.js"></script>
     <script src="https://unpkg.com/vue"></script>
 </body>
 
