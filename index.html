@@ -8,20 +8,14 @@
     <title>Great Race</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+
     <style>
-        /* #app {
-            padding-left: 0px;
-            padding-right: 0px;
-        } */
 
         .racer {
             position: absolute;
             left: 0vw;
-          
             bottom: 10vh;
             transition: left .5s;
-  
         }
 
         body {
@@ -40,30 +34,17 @@
             left: 60px;
         }
 
-        #howl {
-
-        }
-
-        #calcifer {
-    
-        }
-
         #sophie {
-            position: fixed;
+            position: absolute;
             bottom: 10vh;
-            right: 0vw;
-      
         }
         #sophhal{
-            position: fixed;
-            bottom: 50vh;
-            right: 0vw;
+            position: absolute;
+            bottom: 10vh;
         }
         #sophcal{
-            position: fixed;
-            bottom: 50vh;
-            
-            left: 0vw;
+            position: absolute;
+            bottom: 10vh;
         }
     </style>
 
@@ -72,20 +53,16 @@
 <body>
 
     <div class="container-fluid" id="app">
-
+        <img src="sophie.png" id="sophie" alt="Sophie":style = "sophieStyle">
         <img src="turnipHead.png" class = "jump" id="startButton" @click="startRace">
-        <img src="howl.png" class="racer" :class ="howlClass" :style = "howlStyle" id="howl" >
-        <img src="calcifer.png" class="racer" :class ="calciferClass" id="calcifer" :style="calciferStyle">
-        <img src="sophie.png" id="sophie" alt="Sophie">
-      
-      
-        <!-- <img src="sophieAndHowl.png" id="sophhal">
-        <img src="sophie and calcifer.png" id="sophcal" alt="Sophie"> -->
+        <img src="howl.png" class="racer"  :style = "howlStyle" id="howl" >
+        <img src="calcifer.png" class="racer"  id="calcifer" :style="calciferStyle">
+        <img src="sophieAndHowl.png" id="sophhal" :style = "sophHowlStyle">
+        <img src="sophie and calcifer.png" id="sophcal" alt="Sophie" :style = "sophCalStyle">
 
 
 
-    </div>
-    <!--end main container  -->
+    </div><!--end main container  -->
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

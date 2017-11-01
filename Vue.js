@@ -2,61 +2,102 @@ $(function () {
     let vm = new Vue({
         el: '#app',
         data: {
+            raced: false,
             racing: false,
             winner: null,
             howl: 0,
             calcifer: 0,
-
+            soHal: 200,
+            soCal: 200,
+            sophie: 0,
+            interval: null,
            
         },
         computed: {
-            winning(){
 
+            sophieStyle(){
+                return{
+                    right: this.sophie + 'vw'
+                }
             },
             calciferStyle(){
                 return{
                     left: this.calcifer + 'vw' 
-                    
                 }
             },
-            calciferClass(){
- 
+            sophHowlStyle(){
+                return{
+                    right: this.soHal + 'vw'
+                }
             },
-
-          
             howlStyle(){
                 return{
                     left: this.howl + 'vw'
-                    //`${this.howl}vw`
                 }
             },
-            howlClass(){
-      
+            sophCalStyle(){
+                return{
+                    right: this.soCal + 'vw'
+                }
             }
 
         },
         methods: {
-            startRace(){
-            this.howl += 5
-            this.calcifer += 5 
-            },
+            
             move(){
-
+                this.howl += Math.random() >= .5 ? 1 : 0
+                this.calcifer += Math.random() >= .5 ? 1 : 0 
+                this.winCheck()
             },
-            getRandom: function(left){
-                
-                
-               return Math.random()*10 ;
-                // console.log(Math.random() >= .5) ? 1 : 0
-            }
-            
+            winCheck(){
+                if (this.calcifer == this.howl) 
+                    return
 
-            
+                if (this.calcifer > 84){
+                    this.racing = false
+                    calcifer.winner = true
+                    this.won()
+                    this.raced = true
+                    this.calcifer = 200
+                    this.howl = 50
+                    this.soCal = 0
+                    this.sophie = 200
+                    
+                }
+                if (this.howl > 84){
+                    this.racing = false
+                    howl.winner = true
+                    this.won()
+                    this.raced = true
+                    this.howl = 200
+                    this.calcifer = 50
+                    this.soHal = 0
+                    this.sophie = 200
+                }
+            },
+            startRace(){
+              
+                if (this.raced == true){
+                    this.reset()
+                    this.raced = false
+                }
+                else if (this.racing == false)
+                {
+                    this.raced = false
+                    this.racing = true
+                    this.interval = setInterval(() =>{this.move()},50)
+                }
+            },
+            won(){
+                clearInterval(this.interval)
+            },
+            reset(){
+                    this.howl = 0
+                    this.calcifer = 0
+                    this.soCal = 200
+                    this.soHal = 200
+                    this.sophie = 0
+            }
         }
     })
 })
-
-
- // progressPlayer
- // this.tick++
- // this.inuyasha += (Math.random() >= .5) ? 1 : 0

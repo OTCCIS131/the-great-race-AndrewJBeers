@@ -1,9 +1,0 @@
- body {
-            background-image: url("castle.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: bottom center;
-            height: 100vh;
-            width: 100vw;
-            overflow: hidden;
-        }
